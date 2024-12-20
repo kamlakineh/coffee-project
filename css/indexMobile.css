@@ -1,0 +1,506 @@
+@media screen and (max-width: 1324px) {
+  .card-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .google-maps {
+    height: 600px;
+    width: 800px;
+  }
+  @media screen and (max-width: 1224px) {
+    .who-we-are-background {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+  }
+  .nav-bar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  .nav-bar-left-manu-button,
+  .nav-bar-right-manu-button {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border: none;
+  }
+  .nav-bar-manu-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .nav-bar ul {
+    display: none;
+  }
+  /* --------nav-bar-leftButton-start-------------*/
+  .navbar-listDown-button {
+    display: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .navbar-listDown-button-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    padding-left: 20px;
+  }
+  .navbar-listDown-button-div div {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .navbar-listDown-button a {
+    text-decoration: none;
+    color: black;
+  }
+  /* --------nav-bar-leftButton-end-------------*/
+
+  /*-----------nav-bar right -button start---------*/
+  .additional-link-contener-All {
+    display: none;
+    width: 70%;
+    height: 800px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    background-color: white;
+  }
+  .additional-link-contener-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-left: 20px;
+  }
+  .additional-link-div {
+    position: relative;
+  }
+  .additional-link-close-button {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: red;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+  }
+  .additional-link-div h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+  .additional-ref-link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    margin-top: 80px;
+  }
+  .additional-ref-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .additional-link-contener-div h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+  }
+  .additional-link-contener-div button {
+    background-color: transparent;
+    border: none;
+  }
+
+  /*-----------nav-bar right -button end---------*/
+
+  /* image motion*/
+  .carousel {
+    margin-top: 100px;
+    height: 500px;
+  }
+  .d-block {
+    object-fit: cover;
+    z-index: -100;
+  }
+  .ractangle {
+    display: none;
+  }
+  /*---------nav bar end-----------*/
+  /* motion of image start*/
+
+  /*---------------text animation start--------------*/
+  .div1-first {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: slide1TopToBottomText;
+  }
+  @keyframes slide1TopToBottomText {
+    from {
+      transform: translateY(-45%) translateX(10000%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(45%) translateX(-50%);
+      opacity: 1;
+    }
+  }
+  .div1-second {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    animation-duration: 1.9s;
+    animation-fill-mode: forwards;
+    animation-name: slide1LeftToRightText;
+  }
+  @keyframes slide1LeftToRightText {
+    from {
+      transform: translateY(-55%) translateX(-10000%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(55%) translateX(-50%);
+      opacity: 1;
+    }
+  }
+  /* -------------div2 animation-------------*/
+  .div2-first {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translate(-85%, -55%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: slide2TopToBottomText;
+  }
+  @keyframes slide2TopToBottomText {
+    from {
+      transform: translateY(-10000%) translateX(-15%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(45%) translateX(15%);
+      opacity: 1;
+    }
+  }
+  .div2-second {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-85%, -50%);
+    font-size: 35px;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    animation-duration: 1.9s;
+    animation-fill-mode: forwards;
+    animation-name: slide2LeftToRightText;
+  }
+  @keyframes slide2LeftToRightText {
+    from {
+      transform: translateY(-50%) translateX(10000%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(50%) translateX(15%);
+      opacity: 1;
+    }
+  }
+  /* -------------div3 animation-------------*/
+  .div3-first {
+    position: absolute;
+    top: 45%;
+    left: 16%;
+    transform: translate(-84%, -55%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: slide3TopToBottomText;
+  }
+  @keyframes slide3TopToBottomText {
+    from {
+      transform: translateY(10000%) translateX(-16%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(45%) translateX(16%);
+      opacity: 1;
+    }
+  }
+  .div3-second {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-70%, -50%);
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    animation-duration: 1.9s;
+    animation-fill-mode: forwards;
+    animation-name: slide3LeftToRightText;
+  }
+  @keyframes slide3LeftToRightText {
+    from {
+      transform: translateY(-50%) translateX(-10000%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(50%) translateX(-30%);
+      opacity: 1;
+    }
+  }
+  /*----------------text animiton end-----------*/
+  /* motion of image enf*/
+  /*-----------main part-start------------------*/
+  .who-we-are-background {
+    display: none;
+  }
+  .who-we-are-left img {
+    max-width: 400px auto;
+    height: 100%;
+  }
+  .card-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .main-bottom {
+    width: 100%;
+    z-index: -50;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 45px;
+  }
+  .google-maps {
+    height: 600px;
+    width: 996px;
+  }
+
+  @media screen and (max-width: 728px) {
+    .who-we-are {
+      position: static;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: center;
+      background-color: transparent;
+      padding: 100px 10px;
+      margin-bottom: 50px;
+    }
+    .who-we-are-background {
+      display: none;
+    }
+    .who-we-are-left {
+      position: static;
+    }
+    .fonts-who {
+      display: none;
+    }
+    .who-we-are-left img {
+      width: 100%;
+      height: 50%;
+    }
+    .who-we-are-right {
+      width: 100%;
+    }
+    .who-we-are-right p {
+      width: 100%;
+      font-size: 14px;
+      color: rgb(75, 7, 7);
+      font-family: "Poppins", serif;
+      font-weight: 300;
+      font-style: normal;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-align: justify;
+      line-height: 30px;
+    }
+    .who-we-are-right h1 {
+      font-size: 30px;
+    }
+    .who-we-are-more-button {
+      font-size: 16px;
+      background-color: transparent;
+      border: 2px solid darkgreen;
+      border-radius: 9px;
+      padding: 2px 9px;
+    }
+    .who-we-are-more-button:hover {
+      color: #fff;
+      background-color: darkgreen;
+    }
+    /*-----------main part-end--------------------*/
+    .card-group {
+      width: 100%;
+      margin-left: 0;
+      padding: 1px 5px;
+      margin-bottom: 20px;
+      font-family: "Roboto", serif;
+      font-weight: 300;
+      font-style: normal;
+      text-align: center;
+      line-height: 30px;
+      grid-template-columns: none;
+      gap: 0;
+    }
+    .card5 {
+      padding-right: 0;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    .counter-contener {
+      display: flex;
+      flex-direction: column;
+      row-gap: 80px;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    /* ---------------wor-with-us part start---------------  */
+    .work-with-us-contener {
+      width: 100%;
+      padding: 4px 30px;
+      justify-self: center;
+      align-items: center;
+    }
+    .work-with-us-contener-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      row-gap: 50px;
+    }
+    .work-with-us-desciption {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .work-with-us-desciption h1 {
+      font-size: 30px;
+      block-size: border-box;
+      font-family: "Lobster", cursive;
+    }
+    .work-with-us-desciption-par {
+      font-family: "Poppins", serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 12px;
+      color: rgb(0, 0, 0);
+      text-align: justify;
+      line-height: 30px;
+    }
+    .work-with-us-contener-bottom {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    .downdescption1,
+    .downdescption2,
+    .downdescption3 {
+      display: none;
+      text-align: justify;
+      font-size: 12px;
+      width: 100%;
+      color: rgb(0, 0, 0);
+    }
+
+    .me-div1,
+    .me-div2,
+    .me-div3 {
+      border: none;
+      padding: 6px;
+    }
+    .me-div-p {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      font-weight: 500;
+      column-gap: 10px;
+      font-size: 16px;
+      text-align: start;
+      color: rgb(66, 3, 3);
+    }
+    /*------------ wor-with-us part start------------------  */
+
+    /* map and address part start */
+    .main-bottom {
+      width: 100%;
+      z-index: -50;
+      display: flex;
+      flex-direction: column;
+      row-gap: 60px;
+      background-color: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 45px;
+    }
+    .main-bottom-address p strong {
+      font-size: 20px;
+      line-height: 90px;
+    }
+    .google-maps {
+      margin: 0;
+      padding: 0;
+      height: 500px;
+      width: 100%;
+    }
+  }
+  .container-footer p {
+    margin-left: 8px;
+  }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .container-footer {
+    margin: auto;
+  }
+}

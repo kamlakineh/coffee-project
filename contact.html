@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/contactMobl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icon/Saticho.png" type="image/" />
+  </head>
+  <body>
+    <!-----------------nav-bar start---------------------->
+    <header class="header">
+      <nav class="nav-bar" id="navbar">
+        <button class="nav-bar-left-manu-button" id="navbarLeftButton">
+          <img class="nav-bar-manu-icon" src="icon/iconManu.png" />
+        </button>
+        <img class="nav-bar-icon" src="icon/Saticho.png" />
+        <ul>
+          <label><a href="/index.html">HOME</a></label>
+          <label><a href="/about.html">ABOUT US</a></label>
+          <label><a href="/gallery.html">GALLERY</a></label>
+          <label><a href="/contact.html">CONTACT</a></label>
+        </ul>
+        <button class="nav-bar-right-manu-button" id="myButton">
+          <img class="nav-bar-manu-icon" src="icon/iconManu.png" />
+        </button>
+      </nav>
+      <div class="navbar-listDown-button" id="navbarLeftButtonList">
+        <div class="navbar-listDown-button-div">
+          <div><a href="/index.html">HOME</a></div>
+          <div><a href="/about.html">ABOUT US</a></div>
+          <div><a href="/gallery.html">GALLERY</a></div>
+          <div><a href="/contact.html">CONTACT</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="additional-link-contener-All" id="additionalLink">
+      <div class="additional-link-contener-div">
+        <div class="additional-link-div">
+          <button
+            class="additional-link-close-button"
+            id="alCloseButonRight"
+            onclick="closeRightbutton()"
+          >
+            x
+          </button>
+          <h1>Additional Links</h1>
+        </div>
+        <div class="additional-ref-link">
+          <div><a href="/about.html">ABOUT US</a></div>
+          <div><a href="/gallery.html">GALLERY</a></div>
+          <div><a href="/contact.html">CONTACT</a></div>
+        </div>
+        <div class="social-links">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <!---nav bar end-------------------------------->
+    <div class="container-all-div">
+      <div class="container-all-div-image">
+        <img src="image/image2.png" />
+      </div>
+      <h1>Contact Us</h1>
+      <div class="container-div">
+        <div class="main-bottom-address">
+          <p>
+            <strong> Our Location<br /> </strong>
+            Ethiopia,<br />
+            Sidama, chire
+          </p>
+          <p>
+            <strong> Phone<br /> </strong>
+            +251-939-341-425
+          </p>
+          <p>
+            <strong> Email<br /> </strong>
+            satichotrading@gmail.com
+          </p>
+          <iframe
+            class="google-maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117905.95613690435!2d39.01295942540509!3d6.568042805729705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b71b8b56d7b917%3A0x4074b131cd128b94!2sChire%20Town!5e1!3m2!1sen!2set!4v1722426205687!5m2!1sen!2set"
+          ></iframe>
+        </div>
+        <div class="container">
+          <h2>leave Message</h2>
+          <p>
+            We'd love to hear from you! Please reach out with any questions or
+            inquiries.
+          </p>
+
+          <form
+            action="https://formsubmit.co/bacc367d7d9051db095cf95d7c7ea3ff"
+            method="POST"
+          >
+            <input type="text" placeholder="Your Name" name="name" required />
+            <input
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="4"
+              name="text"
+            ></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer part -->
+    <footer class="footer">
+      <img src="image/gallary5.webp" class="footer-background" />
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="">about us</a></li>
+              <li><a href="">our services</a></li>
+              <li><a href="">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <p>
+          Copyright &copy; 2024 Saticho Trading a One Member PLC. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script/contact.js"></script>
+  </body>
+</html>

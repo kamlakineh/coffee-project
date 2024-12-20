@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/indexMobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icon/Saticho.png" type="image/" />
+  </head>
+  <body>
+    <!--loading part-->
+    <div id="loading">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!-----------------nav-bar start---------------------->
+    <header class="header">
+      <nav class="nav-bar" id="navbar">
+        <button class="nav-bar-left-manu-button" id="navbarLeftButton">
+          <img class="nav-bar-manu-icon" src="icon/iconManu.png" />
+        </button>
+        <img class="nav-bar-icon" src="icon/Saticho.png" />
+        <ul>
+          <label><a href="/index.html">HOME</a></label>
+          <label><a href="/about.html">ABOUT US</a></label>
+          <label><a href="/gallery.html">GALLERY</a></label>
+          <label><a href="/contact.html">CONTACT</a></label>
+        </ul>
+        <button class="nav-bar-right-manu-button" id="myButton">
+          <img class="nav-bar-manu-icon" src="icon/iconManu.png" />
+        </button>
+      </nav>
+      <div class="navbar-listDown-button" id="navbarLeftButtonList">
+        <div class="navbar-listDown-button-div">
+          <div><a href="/index.html">HOME</a></div>
+          <div><a href="/about.html">ABOUT US</a></div>
+          <div><a href="/gallery.html">GALLERY</a></div>
+          <div><a href="/contact.html">CONTACT</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="additional-link-contener-All" id="additionalLink">
+      <div class="additional-link-contener-div">
+        <div class="additional-link-div">
+          <button
+            class="additional-link-close-button"
+            id="alCloseButonRight"
+            onclick="closeRightbutton()"
+          >
+            x
+          </button>
+          <h1>Additional Links</h1>
+        </div>
+        <div class="additional-ref-link">
+          <div><a href="/about.html">ABOUT US</a></div>
+          <div><a href="/gallery.html">GALLERY</a></div>
+          <div><a href="/contact.html">CONTACT</a></div>
+        </div>
+        <h1>contact with Us</h1>
+        <div class="social-links">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-----------------nav-bar end------------------------>
+    <!-----------------main-section start-------------------->
+
+    <!------------------image moveing section start------------------------>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/anaerobic.jpg" class="d-block w-100" alt="" />
+          <div class="ractangle"></div>
+          <div class="div1-first">
+            <strong>______</strong> unique cup profile and scores
+          </div>
+          <div class="div1-second">Premiere Coffee</div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/image2.png" class="d-block w-100" alt="..." />
+          <div class="ractangle"></div>
+          <div class="div2-first">
+            <strong>______</strong> excellent blending base
+          </div>
+          <div class="div2-second">Commercial Coffee</div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/gallary1.jpg" class="d-block w-100" alt="..." />
+          <div class="ractangle"></div>
+          <div class="div3-first">
+            <strong>______</strong> Original & natural
+          </div>
+          <div class="div3-second">Speciality Coffee</div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!------------------image moveing section end-------------------------->
+
+    <div class="who-we-are">
+      <div class="who-we-are-left">
+        <img src="image/gallary2.jpg" />
+      </div>
+      <div class="who-we-are-right">
+        <h3>who we are</h3>
+        <h1>Our Beautiful Coffee Trading PLC</h1>
+        <p>
+          Saticho trading started from humble beginnings in 2019 by opening a
+          coffee washing station in the small village of chri, in the Sidama
+          region of Ethiopia by a young and visionary entrepreneur named Bedilu
+          Kebede Kayamo. Since 2019, we accumulated a vast experience working
+          with different coffee exporters and aim to grow our reach even further
+          in the coming years to become one of the leading coffee exporters in
+          the country.
+        </p>
+        <button class="who-we-are-more-button" id="scrollToTop">
+          More About
+        </button>
+      </div>
+      <div class="who-we-are-background"></div>
+    </div>
+
+    <!-----------------main-section end---------------------->
+    <!------------------card slide start---------------------->
+    <div>
+      <div class="card-group">
+        <div class="card">
+          <img src="image/natural.jpg" class="card-img-center" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Natural</h5>
+            <p class="card-text">
+              Natural coffee, also known as dry-processed coffee, is a method of
+              coffee bean processing that differs from the washed process.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/washed.jpg" class="card-img-center" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Washed</h5>
+            <p class="card-text">
+              Washed coffee, also known as wet-processed coffee, is a method of
+              coffee bean processing that involves several key steps to produce
+              high-quality coffee.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="div-img"></div>
+          <img src="image/honey.jpg" class="card-img-center" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Honey</h5>
+            <p class="card-text">
+              Honey process coffee involves removing a bean's outer layer before
+              letting it dry
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="div-img"></div>
+          <img src="image/anaerobic.jpg" class="card-img-center" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Anaerobic</h5>
+            <p class="card-text">
+              A coffee that was fermented in an environment that lacks oxygen..
+            </p>
+          </div>
+        </div>
+        <div class="card card5">
+          <img src="image/rosted.jpg" class="card-img-center" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Roasted</h5>
+            <p class="card-text">
+              Roasted coffee is the result of a meticulous process that
+              transforms raw coffee beans into the flavorful and aromatic
+              product we enjoy, involving key steps to ensure a high-quality
+              cup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------card slide end------------------------>
+    <!------------------conter increase start------------------>
+    <div class="counter-contener" id="target">
+      <div>
+        <h1 id="counter1">1</h1>
+        <h3>Washing Station</h3>
+      </div>
+      <div>
+        <h1 id="counter2">2</h1>
+        <h3>Expert Farmers</h3>
+      </div>
+      <div>
+        <h1 id="counter3">3</h1>
+        <h3>Hectares of Farm</h3>
+      </div>
+    </div>
+
+    <!------------------conter increase end--------------------->
+    <!------------------work with us start-------------------------->
+    <div class="work-with-us-contener">
+      <div class="work-with-us-contener-top">
+        <img class="work-with-us-img" src="image/work_as.jpg" />
+        <div class="work-with-us-desciption">
+          <h1>Work with Us</h1>
+          <p class="work-with-us-desciption-par">
+            Are you looking to partner with a reliable and experienced coffee
+            exporter? Look no further! At Saticho Coffee Export, we value
+            collaboration and long-term relationships.Whether you're a coffee
+            importer, distributor, or roaster, let's work together to bring the
+            finest Ethiopian coffees to coffee lovers worldwide. Contact us
+            today to explore partnership opportunities and experience the magic
+            of Ethiopian coffee with Saticho!
+          </p>
+          <div class="container-downlist">
+            <div class="me-div1" onclick="popupdown1('desc1','dropdown1')">
+              <div class="me-div-p">
+                <p>
+                  What types of coffee processing methods does Saticho Coffee
+                  Export utilize for its beans?
+                </p>
+                <span id="dropdown1">></span>
+              </div>
+              <div class="downdescption1" id="desc1">
+                Saticho Coffee Export employs both natural (dry-processed) and
+                washed (wet-processed) coffee processing methods for its beans.
+                This allows us to offer a diverse range of coffees with distinct
+                flavor profiles, from the fruity and full-bodied notes of
+                natural processed coffees to the bright acidity and clean taste
+                of washed processed coffees.
+              </div>
+            </div>
+            <div class="me-div2" onclick="popupdown1('desc2','dropdown2')">
+              <div class="me-div-p">
+                <p>
+                  What sustainability practices does Saticho Coffee Export
+                  implement in its operations?
+                </p>
+                <span id="dropdown2">></span>
+              </div>
+              <div class="downdescption2" id="desc2">
+                Saticho Coffee Export is committed to sustainable and ethical
+                practices in coffee production. We support environmentally
+                friendly farming methods that promote soil health, water
+                conservation, and biodiversity. Our partnerships with local
+                farmers emphasize fair labor practices and community development
+                initiatives. Furthermore, we prioritize sustainable packaging
+                and shipping practices to minimize our environmental footprint.
+              </div>
+            </div>
+            <div class="me-div3" onclick="popupdown1('desc3','dropdown3')">
+              <div class="me-div-p">
+                <p>
+                  What regions in Ethiopia does Saticho Coffee Export source its
+                  coffee beans from?
+                </p>
+                <span id="dropdown3">></span>
+              </div>
+              <div class="downdescption3" id="desc3">
+                Saticho Coffee Export sources its coffee beans from various
+                renowned coffee-growing regions in Ethiopia, including but not
+                limited to Sidama, Guji and Yirgacheffe. Each region offers
+                unique flavor profiles and characteristics, contributing to the
+                diverse range of high-quality coffees that we export to our
+                clients worldwide.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------work with us end---------------------------->
+    <!-------------------contact start------------------------------>
+    <div class="main-bottom" id="contact">
+      <div>
+        <div class="main-bottom-address">
+          <p>
+            <strong> Our Location<br /> </strong>
+            Ethiopia,<br />
+            Sidama, chire
+          </p>
+          <p>
+            <strong> Phone<br /> </strong>
+            +251-939-341-425
+          </p>
+          <p>
+            <strong> Email<br /> </strong>
+            satichotrading@gmail.com
+          </p>
+        </div>
+      </div>
+      <iframe
+        class="google-maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117905.95613690435!2d39.01295942540509!3d6.568042805729705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b71b8b56d7b917%3A0x4074b131cd128b94!2sChire%20Town!5e1!3m2!1sen!2set!4v1722426205687!5m2!1sen!2set"
+      ></iframe>
+    </div>
+    <!-------------------contact end-------------------------------->
+    <!-- footer part -->
+    <footer class="footer">
+      <img src="image/gallary5.webp" class="footer-background" />
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="">about us</a></li>
+              <li><a href="">our services</a></li>
+              <li><a href="">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            f
+            <ul>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <p>
+          Copyright &copy; 2024 Saticho Trading a One Member PLC. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
