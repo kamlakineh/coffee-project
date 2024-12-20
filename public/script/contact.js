@@ -35,6 +35,38 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  const envName = document.getElementById("name");
+  const envEmail = document.getElementById("email");
+  const envText = document.getElementById("text");
+  e.preventDefault(); // Prevent the form from submitting normally
+  const formData = new FormData(this); // Gather form data
+
+  fetch(this.action, {
+    method: this.method,
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        envName.value = "";
+        envEmail.value = "";
+        envText.value = "";
+        document.getElementById("statusMessage").style.display = "block";
+      } else {
+        document.getElementById("statusMessage").innerText =
+          "Oops! Something went wrong.";
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      document.getElementById("statusMessage").innerText =
+        "Oops! Something went wrong.";
+    });
+});
+const closeButtonOk = document.getElementById("closebuttonOk");
+closeButtonOk.addEventListener("click", () => {
+  document.getElementById("statusMessage").style.display = "none";
+});
 // const scrollToTopButton = document.getElementById("scrollToTop");
 // scrollToTopButton.addEventListener("click", () => {
 //   window.scrollTo({
@@ -42,3 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
 //     behavior: "instant",
 //   });
 // });
+// function emailSend() {
+//   Email.send({
+//     Host: "smtp.mailendo.com",
+//     Username: "kamlakineh88@gmail.com",
+//     Password: "52C9DF2A184EC51015C7DE94CBFF593789B9",
+//     To: "kamlkinehadik@gmail.com",
+//     From: "kamlakinehadik@gmail.com",
+//     Subject: "This is the subject",
+//     Body: "And this is the body",
+//   }).then((message) => alert(message));
+// }

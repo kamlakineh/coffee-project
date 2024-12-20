@@ -102,26 +102,43 @@
           </p>
 
           <form
+            id="contactForm"
             action="https://formsubmit.co/bacc367d7d9051db095cf95d7c7ea3ff"
             method="POST"
           >
-            <input type="text" placeholder="Your Name" name="name" required />
             <input
+              id="name"
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              required
+            />
+            <input
+              id="email"
               type="email"
               placeholder="Your Email"
               name="email"
               required
             />
             <textarea
+              id="text"
               placeholder="Your Message"
               rows="4"
               name="text"
             ></textarea>
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_autoresponse" value="how you are" />
             <button type="submit">Send Message</button>
           </form>
         </div>
+      </div>
+    </div>
+    <div id="statusMessage" class="submit-container">
+      <div class="submit-container-div">
+        <h1 class="submit-container-div-h1">&#x2713;</h1>
+        <p>Email successfully submited</p>
+        <button id="closebuttonOk">OK</button>
       </div>
     </div>
     <!-- footer part -->
