@@ -78,6 +78,9 @@ body {
 }
 /*-----------nav-bar right -button start---------*/
 .additional-link-contener-All {
+  font-family: "Roboto", serif;
+  font-weight: 410;
+  font-style: normal;
   display: none;
   width: 30%;
   height: 800px;
