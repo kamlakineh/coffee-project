@@ -98,7 +98,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY >= 50) {
     navbar.style.backgroundColor = "rgb(252, 252, 251)";
     navbar.style.boxShadow = "10px 10px 10px rgba(0, 0, 0, 0.08)";
-    navbar1.style.paddingBottom = "40px";
+    navbar1.style.paddingBottom = "30px";
   } else {
     navbar.style.backgroundColor = "rgb(244, 244, 244)";
     navbar.style.boxShadow = "none";
